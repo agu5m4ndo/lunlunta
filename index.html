@@ -1,134 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ejemplo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Ejemplo</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div id="logo">
-        <i class='bx bx-home'></i>
-        <h4>La casita de Lunlunta </h4>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <i class="bx bx-home"></i>
+          <h4>La casita de Lunlunta</h4>
+        </div>
+        <ul id="links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#services-section">Servicios</a></li>
+          <li><a href="#location-section">Ubicacion</a></li>
+          <li><a href="#contact-section">Contacto</a></li>
+        </ul>
+        <div id="mobile-burger-menu">
+          <input type="checkbox" id="check" />
+          <label for="check" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </nav>
+      <div id="menu-links">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#services-section">Servicios</a></li>
+          <li><a href="#location-section">Ubicacion</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+        </ul>
       </div>
-      <ul id="links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <div id="mobile-burger-menu">
-        <input type="checkbox" id="check" />
-        <label for="check" id="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-    </nav>
-    <div id="menu-links">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <section id="hero-section">
-      <div id="main-text">
-        <h3 class="main-title">Tu refugio de ensueño en <span>Mendoza</span></h3>
-        <p class="main-subtitle">La escapada perfecta para toda la familia: Descubre la comodidad de nuestro hogar
-          vacacional.</p>
-        <div id="button-effect">
-          <!-- <div id="button-shadow">Ver más</div> -->
-          <a id="main-button" href="#">Ver más</a>
-        </div>
-      </div>
-      <div id="main-image">
-        <img src="./imagenes/20230701_102503.jpg" alt="">
-        <div id="mouse">
-          <div id="mouse-wheel"></div>
-        </div>
-      </div>
-    </section>
-    <section id="about-section">
-      <h3 class="secondary-title">Tu mejor opción de hospedaje</h3>
-      <p class="secondary-subtitle">Descubre las ventajas de nuestra casa de alquiler</p>
-      <div id="advantages-container">
-        <div id="advantage-1" class="advantages">
-          <span class="material-symbols-outlined">
-            location_on
-          </span>
-          <h4>Ubicación</h4>
-          <p>A poca distancia de tiendas y bodegas importantes. Fácil acceso a rutas importantes.</p>
-        </div>
-        <div id="advantage-2" class="advantages">
-          <span class="material-symbols-outlined">
-            fence
-          </span>
-          <h4>Privacidad</h4>
-          <p>Piscina privada y áreas de descanso sin compartir con otros huéspedes.</p>
-        </div>
-        <div id="advantage-3" class="advantages">
-          <span class="material-symbols-outlined">
-            grass
-          </span>
-          <h4>Espacio</h4>
-          <p>Amplio patio al aire libre para disfrutar de comidas al fresco y tiempo de calidad juntos.</p>
-        </div>
-        <div id="advantage-4" class="advantages">
-          <span class="material-symbols-outlined">
-            bed
-          </span>
-          <h4>Comodidad</h4>
-          <p>Siéntete como en casa en nuestros espacios diseñados para brindar comodidad y calidez.</p>
-        </div>
-      </div>
-    </section>
-    <section id="services-section">
-      <h3>Servicios</h3>
-      <div class="service">
-        <div class="service-decoration">
-          <div class="circle">
-            <span class="material-symbols-outlined">
-              pool
-            </span>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div id="main-text">
+          <h3 class="main-title">
+            Tu refugio de ensueño en <span>Mendoza</span>
+          </h3>
+          <p class="main-subtitle">
+            La escapada perfecta para toda la familia: Descubre la comodidad de
+            nuestro hogar vacacional.
+          </p>
+          <div id="button-effect">
+            <!-- <div id="button-shadow">Ver más</div> -->
+            <a id="main-button" href="#">Ver más</a>
           </div>
-          <div class="vertical-line"></div>
         </div>
-        <div class="service-text">
-          <h4>Piscina privada</h4>
-          <p>Cuenta con una piscina re copada que no puede venir nadie a no ser que vos les abras porque si, es así.
-            También te podes venir a broncear el culo acá</p>
-
+        <div id="main-image">
+          <img src="./imagenes/20230701_102503.jpg" alt="" />
+          <div id="mouse">
+            <div id="mouse-wheel"></div>
+          </div>
         </div>
-        <div class="service-image">
-          <img src="./imagenes/pileta.jpg" alt="">
+      </section>
+      <section id="about-section">
+        <h3 class="secondary-title">Tu mejor opción de hospedaje</h3>
+        <p class="secondary-subtitle">
+          Descubre las ventajas de nuestra casa de alquiler
+        </p>
+        <div id="advantages-container">
+          <div id="advantage-1" class="advantages">
+            <span class="material-symbols-outlined"> location_on </span>
+            <h4>Ubicación</h4>
+            <p>
+              A poca distancia de tiendas y bodegas importantes. Fácil acceso a
+              rutas importantes.
+            </p>
+          </div>
+          <div id="advantage-2" class="advantages">
+            <span class="material-symbols-outlined"> fence </span>
+            <h4>Privacidad</h4>
+            <p>
+              Piscina privada y áreas de descanso sin compartir con otros
+              huéspedes.
+            </p>
+          </div>
+          <div id="advantage-3" class="advantages">
+            <span class="material-symbols-outlined"> grass </span>
+            <h4>Espacio</h4>
+            <p>
+              Amplio patio al aire libre para disfrutar de comidas al fresco y
+              tiempo de calidad juntos.
+            </p>
+          </div>
+          <div id="advantage-4" class="advantages">
+            <span class="material-symbols-outlined"> bed </span>
+            <h4>Comodidad</h4>
+            <p>
+              Siéntete como en casa en nuestros espacios diseñados para brindar
+              comodidad y calidez.
+            </p>
+          </div>
         </div>
+      </section>
+      <section id="services-section">
+        <h3>Servicios</h3>
+        <div class="service">
+          <div class="service-text">
+            <h4 id="first-color">Piscina privada</h4>
+            <p>
+              Relájate y disfruta de un refrescante chapuzón en nuestra piscina
+              privada durante tu estancia en nuestra casa de alquiler
+              vacacional. Con un amplio espacio para descansar y tomar el sol,
+              podrás relajarte junto a la piscina mientras te bronceas bajo el
+              cálido sol y disfrutas del hermoso espacio que te rodea. Nosotros
+              mantenemos la piscina limpia y lista para que la disfrutes.
+            </p>
+            <div id="first-color" class="outer-circle left-circle">
+              <div class="inner-circle">
+                <span
+                  id="first-color-font"
+                  class="material-symbols-outlined pool">
+                  pool
+                </span>
+              </div>
+            </div>
+          </div>
+          <img class="arrow arrow-left" src="./imagenes/arrow1.svg" alt="" />
+          <div class="service-image">
+            <img src="./imagenes/pileta.jpg" alt="" />
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-image">
+            <img src="./imagenes/87166551.jpg" alt="" />
+          </div>
+          <div class="service-text">
+            <div class="right-side">
+              <h4 id="second-color">Amplio patio</h4>
+            </div>
+            <p>
+              Nuestro patio es el lugar perfecto para disfrutar de una comida al
+              aire libre o de una barbacoa con amigos y familiares durante tu
+              estancia en nuestra casa de alquiler vacacional. Con amplio
+              espacio para que jueguen los niños, podrás relajarte y disfrutar
+              de la tranquilidad de nuestro amplio patio.
+            </p>
+            <div id="second-color" class="outer-circle right-circle">
+              <div class="inner-circle">
+                <span
+                  id="second-color-font"
+                  class="material-symbols-outlined soccer">
+                  sports_soccer
+                </span>
+              </div>
+            </div>
+            <img
+              class="arrow arrow-right"
+              src="./imagenes/arrow2.svg "
+              alt=" " />
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-text">
+            <h4 id="third-color">Habitaciones familiares</h4>
+            <p>
+              Nuestras habitaciones familiares son perfectas para familias y
+              grupos que viajan juntos. Con amplio espacio para que todos se
+              relajen y descansen, nuestras habitaciones familiares son el lugar
+              perfecto para relajarse después de un día de diversión en Mendoza.
+            </p>
+            <div id="third-color" class="outer-circle left-circle">
+              <div class="inner-circle">
+                <span
+                  id="third-color-font"
+                  class="material-symbols-outlined bedroom">
+                  bed
+                </span>
+              </div>
+            </div>
+            <img
+              id="third-arrow "
+              class="arrow arrow-left"
+              src="./imagenes/arrow3.svg "
+              alt=" " />
+          </div>
+          <div class="service-image">
+            <img src="./imagenes/124549018.jpg " alt=" " />
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-image">
+            <img src="./imagenes/69662253.jpg " alt=" " />
+          </div>
+          <div class="service-text">
+            <div class="right-side">
+              <h4 id="fourth-color">Cocina completa</h4>
+            </div>
+            <p>
+              Nuestra cocina completa es perfecta para preparar comidas caseras,
+              refrigerios y bebidas durante tu estancia en nuestra casa de
+              alquiler vacacional. Con una amplia gama de electrodomésticos y
+              utensilios de cocina, podrás preparar tus comidas favoritas
+              durante tu estancial.
+            </p>
+            <div id="fourth-color" class="outer-circle right-circle">
+              <div class="inner-circle">
+                <span
+                  id="fourth-color-font"
+                  class="material-symbols-outlined kitchen">
+                  kitchen
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="more-services">
+          <h3>Además ofrecemos:</h3>
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    wifi
+                  </span>
+                  <p id="services-list-item">Wifi gratis</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    local_parking
+                  </span>
+                  <p id="services-list-item">Estacionamiento privado</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    tv
+                  </span>
+                  <p id="services-list-item">TV por cable</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    dry
+                  </span>
+                  <p id="services-list-item">Calefacción por estufa</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    pets
+                  </span>
+                  <p id="services-list-item">Se admiten mascotas</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    smoke_free
+                  </span>
+                  <p id="services-list-item">Habitaciones para no fumadores</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <span
+                    id="services-list-item"
+                    class="material-symbols-outlined">
+                    person
+                  </span>
+                  <p id="services-list-item">Capacidad de 5 personas</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section id="location-section">
+        <img
+          class="location-divider"
+          id="top-divider"
+          src="./imagenes/triangleAsymmetrical.svg"
+          alt="" />
+        <h3>Ubicación e información</h3>
+        <div id="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.1434370058431!2d-68.84531783042789!3d-33.04135867412934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e74efa4c3d77d%3A0x37dff0e2e0f56533!2sAzcu%C3%A9naga%202301%2C%20Lunlunta%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1688521098615!5m2!1ses-419!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="location-text">
+            <div class="location-block">
+              <h4>DIRECCION</h4>
+              <p>Azcuenaga 2301, Lunlunta, Mendoza</p>
+              <a
+                class="location-button"
+                href="https://www.google.com/maps?ll=-33.04136,-68.844674&z=17&t=m&hl=es-419&gl=AR&mapclient=embed&q=Azcu%C3%A9naga+2301+Lunlunta+Mendoza"
+                target="_blank"
+                >Como llegar
+                <span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span></a
+              >
+            </div>
+            <div class="location-block">
+              <h4>TELEFONO</h4>
+              <p>Para reservas o consultas:</p>
+              <a class="location-button" href="tel:+5492613727375"
+                >+54 9 261 672-7375
+                <span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span></a
+              >
+            </div>
+            <div class="location-block">
+              <h4>HORARIOS</h4>
+              <p>- Entrada: 10:30hs</p>
+              <p>- Salida: 14:00hs</p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="location-divider"
+          id="bottom-divider"
+          src="./imagenes/triangleAsymmetrical (1).svg"
+          alt="" />
+      </section>
+      <section id="surroundings-section"></section>
+      <section id="contact-section">
+        <div id="contact-container">
+          <div id="contact-image">
+            <i class="bx bx-paper-plane"></i>
+          </div>
+          <div id="contact-text">
+            <h3>Contactanos</h3>
+            <form action="">
+              <input
+                type="text"
+                required
+                name="name"
+                id="name"
+                placeholder="Nombre" />
+              <input
+                type="email"
+                required
+                name="email"
+                id="email"
+                placeholder="Email" />
+              <textarea
+                style="resize: none"
+                placeholder="Haz una pregunta"
+                name="message"
+                id="message"
+                cols="30"
+                rows="8"
+                required></textarea>
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>La casita de lunlunta</h3>
+      <div>
+        <a
+          href="https://www.booking.com/hotel/ar/la-casita-de-lunlunta.es-ar.html"
+          ><img src="./imagenes/booking-logo.svg" alt="" />
+        </a>
       </div>
-    </section>
-    <section id="location-section">
-
-    </section>
-    <section id="surroundings-section">
-
-    </section>
-    <section id="contact-section">
-
-    </section>
-  </main>
-  <footer></footer>
-  <script src="./index.js"></script>
-</body>
-
+    </footer>
+    <script src="./index.js "></script>
+  </body>
 </html>
