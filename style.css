@@ -485,10 +485,11 @@ h3 {
     flex-direction: column;
     padding: 0 50px;
     background-image: linear-gradient(45deg, #6600FF, #00CC99);
+    overflow: hidden;
 }
 
 .location-divider {
-    width: 98vw;
+    width: 100vw;
     height: 100px;
 }
 
@@ -679,11 +680,14 @@ footer div img {
 
 @media screen and (max-width: 768px) {
     /* NavBar */
+    header {
+        width: 100vw;
+    }
     #links {
         display: none;
     }
-    #logo {
-        font-size: 16px;
+    nav {
+        z-index: 100;
     }
     #menu-links {
         display: block;
@@ -742,4 +746,61 @@ footer div img {
     #check:checked~#burger-menu span:nth-child(3) {
         transform: rotate(-45deg) translate(8px, -8px);
     }
+    main {
+        width: 100vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #hero-section {
+        flex-direction: column;
+        height: 100vh;
+        box-sizing: border-box;
+        gap: 0;
+    }
+    #main-text {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        margin-top: 70px;
+    }
+    #main-image {
+        padding: 20px;
+        width: 100%;
+    }
+    #button-effect {
+        margin-top: 20px;
+    }
+    #mouse {
+        border-color: #fff;
+        bottom: 40px;
+    }
+    #mouse-wheel {
+        border-color: #fff;
+        background-color: #fff;
+    }
+    #about-section {
+        padding: 20px;
+    }
+    #advantages-container {
+        padding: 25px;
+        flex-direction: column;
+        margin: 0;
+    }
+    #more-services {
+        display: none;
+    }
+    /* ================================Revisar tema tablas====================== */
 }
